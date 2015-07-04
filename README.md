@@ -1,78 +1,24 @@
-# Jekyll-Bootstrap
+## 博客写什么
+这个博客主要写工作、生活感悟
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+- 工作
+	- BI - 之前工作经历关于BI，所以会有时写点BI的东西
+	- 数据分析 - 对数据分析还有数据科学家这个概念感兴趣，我会不断学习，并写下感悟
+	- 编程 - 数据科学家怎能不懂R/Python
 
-## Usage
+- 生活
+	- 读书的读书笔记
+	- 生活反思和感悟
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+## 为什么写
+### 被逼着写
+高中语文一直处于及格线边缘，写作一直不是我的强爱和爱好。直到工作，清楚地记得老板让我们几个毕业生每人每天写1k字总结，那个时候真是痛苦。大概写了半年作用，这个习惯居然慢慢改变了我，学到什么东西就想些下来，记录下来。刚开始用word后来用博客。
 
-## Version
+### 不吐不快
+下一个阶段便是用[csdn博客](http://blog.csdn.net/donkey2004112103)写，断断续续的写了几年。这段时间称之为不吐不快，学了新东西想记录，同时也是自己的笔记。这段时间不断的写但是写作技巧并没有很大提高，提高最多的还是技术。同时养成了记笔记的习惯，开始是onenote，后来evernote现在是evernote+dropbox+todoist，这个有空再表。
 
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
+### 有目的写
+为了有更多的自主选择权，后来买了域名用了wordpress，再[hackbo.com](hackbo.com)上继续写。这个时候的写慢慢开始注意格式，而且全部是英文，内容专注于sap的bo。
 
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
-
-## Milestones
-
-[0.4.0](https://github.com/plusjade/jekyll-bootstrap/milestones/v%200.4.0) - next release [ETA 03/29/2015]
-
-### GOALS
-
-* No open PRs against master branch.
-* Squash some bugs.
-* Add some new features (low-hanging fruit).
-* Establish social media presence.
-
-
-### Bugs
-
-|Bug |Description
-|------|---------------
-|[#86](https://github.com/plusjade/jekyll-bootstrap/issues/86)  |&#x2611; Facebook Comments
-|[#113](https://github.com/plusjade/jekyll-bootstrap/issues/113)|&#x2611; ASSET_PATH w/ page & post
-|[#144](https://github.com/plusjade/jekyll-bootstrap/issues/144)|&#x2610; BASE_PATH w/ FQDN
-|[#227](https://github.com/plusjade/jekyll-bootstrap/issues/227)|&#x2611; Redundant JB/setup
-
-### Features
-
-|Bug |Description
-|------|---------------
-|[#98](https://github.com/plusjade/jekyll-bootstrap/issues/98)  |&#x2611; GIST Integration
-|[#244](https://github.com/plusjade/jekyll-bootstrap/issues/244)|&#x2611; JB/file_exists Helper
-|[#42](https://github.com/plusjade/jekyll-bootstrap/issues/42)  |&#x2611; Sort collections of Pages / Posts
-|[#84](https://github.com/plusjade/jekyll-bootstrap/issues/84)  |&#x2610; Detecting production mode
-
-### TODOS
-
-Review existing pull requests against plusjake/jekyll-bootstrap:master. Merge or close each.
-
-* Create twitter account. Add link / icon on jekyllbootstrap.com.
-* Create blog posts under plusjade/gh-pages, expose on jekyllbootstrap.com, feed to twitter account.
-* Announce state of project, announce roadmap(s), announce new versions as they’re released.
-
-## Contributing
-
-
-To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-This is very important as it allows me to accept your pull request without having to publish a public version release.
-
-Small, atomic Features, bugs, etc.
-Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-Please rebase as often as possible when working.
-Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
-
-For Big Features or major API extensions/edits:
-This is the one case where I'll accept pull-requests based off the master branch.
-This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-Translation : it might take a bit longer so please be patient! (but sincerely thank you).
-
-**Jekyll-Bootstrap Documentation Website.**
-
-The documentation website at <http://jekyllbootstrap.com> is maintained at https://github.com/plusjade/jekyllbootstrap.com
-
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
+### 新的旅程
+现在的我有了新的目标成为数据科学家，不想花太多时间折腾wordpress，于是转到这个技术氛围浓厚的github上。它将记录我新的成长。
