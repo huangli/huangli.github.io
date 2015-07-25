@@ -1,11 +1,35 @@
 ---
 layout: page
-title: About
+title: 关于博客
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## 我是谁
+计算机毕业后一直做SAP的咨询，开始是搭建企业ERP，收集数据。后来BI处理分析数据。现在回到家乡后专门学习研究大数据分析，正在通往数据科学家的路上。
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+## 博客写什么
+这个博客主要写工作、生活感悟
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+- 工作
+  - BI - 之前工作经历关于BI，所以会有时写点BI的东西
+  - 数据分析 - 对数据分析还有数据科学家这个概念感兴趣，我会不断学习，并写下感悟
+  - 编程 - 数据科学家怎能不懂R/Python
+
+- 生活
+  - 读书的读书笔记
+  - 生活反思和感悟
+
+## 为什么写
+
+### 被逼着写
+高中语文一直处于及格线边缘，写作一直不是我的强爱和爱好。直到工作，清楚地记得老板让我们几个毕业生每人每天写1k字总结，那个时候真是痛苦。大概写了半年作用，这个习惯居然慢慢改变了我，学到什么东西就想些下来，记录下来。刚开始用word后来用博客。
+
+### 不吐不快
+下一个阶段便是用[csdn博客](http://blog.csdn.net/donkey2004112103)写，断断续续的写了几年。这段时间称之为不吐不快，学了新东西想记录，同时也是自己的笔记。这段时间不断的写但是写作技巧并没有很大提高，提高最多的还是技术。同时养成了记笔记的习惯，开始是onenote，后来evernote现在是evernote+dropbox+todoist，这个有空再表。
+
+### 有目的写
+为了有更多的自主选择权，后来买了域名用了wordpress，再[hackbo.com](hackbo.com)上继续写。这个时候的写慢慢开始注意格式，而且全部是英文，内容专注于sap的bo。
+
+### 新的旅程
+现在的我有了新的目标成为数据科学家，不想花太多时间折腾wordpress，于是转到这个技术氛围浓厚的github上。它将记录我新的成长。
+
