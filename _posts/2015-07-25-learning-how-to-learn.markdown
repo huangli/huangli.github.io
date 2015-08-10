@@ -169,5 +169,5 @@ Pomodoro番茄工作法，25 min foucus then have a 5 min break。个人感觉�
 ## 总结
 - 不要太长时间专注于某一个解决不了的难题，适当放松，换另外一个subject或者运动一下，让处于diffuse的大脑继续帮忙
 - 面对拖延不要专注于结果，专注于过程。比如先看20分钟数据挖掘而不是看完第三章
-- 凡事预测立，不预则废。有年度，季度，月度目标，拆分成daily，weekly，monthly，yearly talk list 帮助自己。不要浪费自己的working memory去记这些东西，资源是有限的，大脑的资源也是
+- 凡事预测立，不预则废。有年度，季度，月度目标，拆分成daily，weekly，monthly，yearly task list 帮助自己。不要浪费自己的working memory去记这些东西，资源是有限的，大脑的资源也是
 - 课程链接：[learn how to learn](https://www.coursera.org/learn/learning-how-to-learn/outline)
