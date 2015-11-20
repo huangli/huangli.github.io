@@ -12,6 +12,7 @@ categories: jekyll update
 
 ### sales 数据
 此文所有操作都是针对sales数据。原始数据做个简单介绍：
+
 - ID: 销售人员编号
 - Prod：产品编码编号
 - Quant: 产品销售数量
@@ -24,6 +25,7 @@ algae就是关于河流的各种化学参数了，不做详细解释。
 
 ## 数据探索技巧
 ### Top N/Bottom N 
+
 如何找到sales数据中产品价格中位数最贵和最便宜的5个产品？我的思路是先求出产品价格中位数，然后找到最贵的、接着最便宜的最后两个数据和在一起。作者代码显然更精炼。
 通过order函数进行排序，sapply函数把最贵和最便宜和在一起，接着通过boxplot的方式看分布,这里用了指数形式否则差别太大有些数据不易观察到。
 {% highlight R %}
@@ -40,6 +42,7 @@ boxplot(Uprice ~ Prod, data = tops, ylab="Uprice", log="y")
 
 
 ### 找到异常值outlier
+
 如何找到sales数据产品价格的异常值并统计数量？如果人群之中姚明站在那里，一眼就能看出来。那么R有什么办法可以找到异常值？建议先看看什么是[四分位数](https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%88%86%E4%BD%8D%E6%95%B0)和[箱形图](http://stattrek.com/statistics/charts/boxplot.aspx?Tutorial=AP)，便可以了解判断的[方法](http://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm)。R有方法[boxplot.stats](https://stat.ethz.ch/R-manual/R-devel/library/grDevices/html/boxplot.stats.html)。
 {% highlight R %}
 attach(sales)
