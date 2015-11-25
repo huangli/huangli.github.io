@@ -10,7 +10,7 @@ categories: jekyll update
 用来探索数据的工具不少，比如不需要任何编程经验的[Tableau](http://www.tableau.com/)、Excel等，
 此文是总结如何用R来完成探索数据或者描述性统计分析的工作，虽然R灵活但是学习曲线的确比Tableau高了一些。数据和代码来自与[Data Mining with R](http://www.dcc.fc.up.pt/~ltorgo/DataMiningWithR/datasets4.html)的sales和algae数据
 
-### sales 数据
+### sales 数
 此文所有操作都是针对sales数据。原始数据做个简单介绍：
 
 - ID: 销售人员编号
@@ -24,6 +24,7 @@ categories: jekyll update
 algae就是关于河流的各种化学参数了，不做详细解释。
 
 ## 数据探索技巧
+
 ### Top N/Bottom N 
 
 如何找到sales数据中产品价格中位数最贵和最便宜的5个产品？我的思路是先求出产品价格中位数，然后找到最贵的、接着最便宜的最后两个数据和在一起。作者代码显然更精炼。
