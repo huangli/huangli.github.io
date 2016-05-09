@@ -2,8 +2,8 @@
 layout: post
 title:  "百度网盘插件"
 date:   2016-04-11 22:34:37
-tags: 问题记录 
-categories: jekyll update
+tags: 浏览器插件 工具
+categories: 问题记录
 ---
 
 ### 需求

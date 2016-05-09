@@ -2,8 +2,8 @@
 layout: post
 title:  "决策与判断"
 date:   2015-08-10 15:34:37
-tags: 读书笔记
-categories: jekyll update
+tags: 理性思维
+categories: 读书笔记
 ---
 
 

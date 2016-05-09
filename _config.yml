@@ -1,12 +1,15 @@
-# Site settings
-title: 退居三线
+#markdown: rdiscount
+permalink: /:title/
+url: https://github.com/huangli
+#highlighter: pygments
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 30
+paginate_path: "page:num"
+name: 退居三线
+description: 退居三线 | There are no limitations, except the ones you make
+author: 黄立
 email: ekinasm@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  虽然从上海回到老家，不变的是依然喜欢写写程序，数据分析，依然要不断学习和成长。
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://huangli.github.io/" # the base hostname & protocol for your site
-twitter_username: huangli
-github_username:  huangli
-
-# Build settings
-markdown: kramdown
+hub: huangli
+safe: false
+about: "退居三线"

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "A Mind For Numbers 心得笔记"
+title:  "A Mind For Numbers"
 date:   2015-09-20 10:58:37
-tags: 统计学
-categories: jekyll update
+tags: 心理学 如何学习
+categories: 读书笔记
 ---
 
 ## foreword

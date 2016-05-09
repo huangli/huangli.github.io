@@ -2,8 +2,8 @@
 layout: post
 title:  "R探索数据分析(持续更新)"
 date:   2015-11-20 15:34:37
-tags: 读书笔记 R
-categories: jekyll update
+tags: R
+categories: 读书笔记
 ---
 
 ## 概述

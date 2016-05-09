@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "learning how to learn notes"
+title:  "learning how to learn"
 date:   2015-07-25 15:34:37
-tags: 读书笔记 公开课
-categories: jekyll update
+tags: 心理学 如何学习
+categories: 公开课
 ---
 
 

@@ -3,7 +3,7 @@ layout: post
 title:  "三十而立"
 date:   2015-12-24 22:34:37
 tags: 随感 
-categories: jekyll update
+categories: 人生感悟
 ---
 
 ## 三十而立

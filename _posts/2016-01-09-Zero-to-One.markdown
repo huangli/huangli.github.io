@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Zero-To-One读书笔记"
+title:  "Zero To One"
 date:   2016-01-09 22:34:37
-tags: 读书笔记 
-categories: jekyll update
+tags: 创业 互联网
+categories: 读书笔记
 ---
 
 一些关于《Zero To One》的心得和体会，有些非常有启发的观点，值得一读。

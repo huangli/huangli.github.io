@@ -2,8 +2,8 @@
 layout: post
 title:  "R连接Mysql及其乱码问题"
 date:   2015-10-24 15:34:37
-tags: 读书笔记
-categories: jekyll update
+tags: R
+categories: 笔记
 ---
 
 

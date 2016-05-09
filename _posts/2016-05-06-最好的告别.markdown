@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "最好的告别读书笔记"
+title:  "最好的告别"
 date:   2016-05-05 10:34:37
-tags: 读书笔记 
-categories: jekyll update
+tags: 哲学 
+categories: 读书笔记
 ---
 
 ### 总体感受
