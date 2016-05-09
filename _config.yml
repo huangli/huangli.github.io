@@ -1,6 +1,6 @@
 #markdown: rdiscount
 permalink: /:title/
-url: https://github.com/huangli
+url: http://huangli.github.io
 #highlighter: pygments
 highlighter: rouge
 gems: [jekyll-paginate]
