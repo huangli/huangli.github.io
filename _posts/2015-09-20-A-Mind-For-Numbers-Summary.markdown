@@ -2,7 +2,7 @@
 layout: post
 title:  "A Mind For Numbers"
 date:   2015-09-20 10:58:37
-tags: 心理学 如何学习
+tags: 心理学 如何学习 英文原版
 categories: 读书笔记
 ---
 

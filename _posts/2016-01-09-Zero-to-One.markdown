@@ -2,7 +2,7 @@
 layout: post
 title:  "Zero To One"
 date:   2016-01-09 22:34:37
-tags: 创业 互联网
+tags: 创业 互联网 英文原版
 categories: 读书笔记
 ---
 

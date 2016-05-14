@@ -2,7 +2,7 @@
 layout: post
 title:  "R探索数据分析(持续更新)"
 date:   2015-11-20 15:34:37
-tags: R
+tags: R 英文原版
 categories: 读书笔记
 ---
 

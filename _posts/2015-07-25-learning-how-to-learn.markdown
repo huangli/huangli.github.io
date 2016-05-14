@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "learning how to learn"
+title:  "Learning How To Learn"
 date:   2015-07-25 15:34:37
-tags: 心理学 如何学习
+tags: 心理学 如何学习 
 categories: 公开课
 ---
 
