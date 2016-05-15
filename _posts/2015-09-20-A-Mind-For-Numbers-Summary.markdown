@@ -21,7 +21,7 @@ categories: 读书笔记
 
 
 ## Chapter 2 Easy does it - Why Trying Too Hard Can Sometimes Be Part of the Problem
-	- 开始讲述原理和方法，以及为什么难以学好的原因
+>- 开始讲述原理和方法，以及为什么难以学好的原因
 	- 原因
 		- Einstellung是牢笼也是经验，困住我们解决不了新的问题，唯有diffuse mode可破
 		- 还有就是拖延给我们学习数学或者科学时造成困难
@@ -49,11 +49,11 @@ categories: 读书笔记
 - Ultimately, this means that relaxation is an important part of hard work—and good work, for that matter
 
 ## Chapter 3 learning is creating
-	- 为啥是creating？因为learning都需要diffuse mode来帮助获得新的insight，新的insgiht就是神经元的连接，这不就是create的过程吗？
-	- 本章主要讲转换两种mode的技巧，以及继续阐明两种mode的功效，大量的metaphor
-	- 睡眠的重要性
-	- 拖延用番茄工作法
-	- 所以碰到问题先focused 上场，then diffuse mode，注意每天都要学一点哪怕只有一点，沮丧了就放松。倾听自己身体的声音，不要太push自己
+>- 为啥是creating？因为learning都需要diffuse mode来帮助获得新的insight，新的insgiht就是神经元的连接，这不就是create的过程吗？
+- 本章主要讲转换两种mode的技巧，以及继续阐明两种mode的功效，大量的metaphor
+- 睡眠的重要性
+- 拖延用番茄工作法
+- 所以碰到问题先focused 上场，then diffuse mode，注意每天都要学一点哪怕只有一点，沮丧了就放松。倾听自己身体的声音，不要太push自己
 
 ### Shifting between the Focused and Diffuse Modes
 - one of the three B’s usually seems to do the trick: the bed, the bath, or the bus
@@ -113,22 +113,22 @@ Make the neural connections needed for normal thinking processes—which is why 
 	- Strengthen and rehearse the important parts of what you are learning and prune away trivialities
 
 ## Chapter 4 chunking and avoiding illusions of competence
-	- 继续深入讲基础概念，以及学习方法
+>- 继续深入讲基础概念，以及学习方法
 	- chunking其实就是为啥要先focused mode的原因
-		- 形成了chunk才能占用更少的working memory
-		- 以后更容易被回忆起
-		- 生活中很多比如系鞋带，开车都是形成了chunk，否则遇到紧急情况的时候还要想怎么换挡就不行了
-		- Solomon虽然可以一字不漏的记住所有细节但是不能形成chunk，只见树木不见森林，是不是说凡事都有利弊了？
-	- Illusions of Competence，学习的误区
-		- 直接看答案的话
-		- 重读也会造成自己已经掌握的假象
-	- recall 和 Practice
-		- 学完新东西立马recall我觉得就是练习和复习的一种，以后看文章要recall，睡前要recall
-		- 练习帮助把working memory变成long term memory
-		- chunk变的更加牢固
-	- 之前做的不好的地方
-		- 学完之后没有recall和review，印象笔记帮助我recall
-		- 想省时间只看solution造成了illusions of competence  
+	- 形成了chunk才能占用更少的working memory
+	- 以后更容易被回忆起
+	- 生活中很多比如系鞋带，开车都是形成了chunk，否则遇到紧急情况的时候还要想怎么换挡就不行了
+	- Solomon虽然可以一字不漏的记住所有细节但是不能形成chunk，只见树木不见森林，是不是说凡事都有利弊了？
+- Illusions of Competence，学习的误区
+	- 直接看答案的话
+	- 重读也会造成自己已经掌握的假象
+- Recall 和 Practice
+	- 学完新东西立马recall我觉得就是练习和复习的一种，以后看文章要recall，睡前要recall
+	- 练习帮助把working memory变成long term memory
+	- chunk变的更加牢固
+- 之前做的不好的地方
+	- 学完之后没有recall和review，印象笔记帮助我recall
+	- 想省时间只看solution造成了illusions of competence  
 	
 ### What Happens When You Focus Your Attention
 - Focused attention, in other words, can often help solve problems, but it can also create problems by blocking our ability to see new solutions(充满哲学意义)
@@ -174,15 +174,15 @@ Make the neural connections needed for normal thinking processes—which is why 
 - Simple recall—trying to remember the key points without looking at the page is one of the best ways to help the chunking process along
 
 ## Chatper 5 preventing procrastination
-	- 为啥有procrastination
-		- things that make us feel uncomfortable
-		- Procrastination is like addiction. It offers temporary excitement and relief from boring reality
-	- 影响
-		- 影响心理和生理健康 
-		- The dread of doing a task uses up more time and energy than doing the task itself
-	- 如何克服
-		- You should have been studying a little bit all along
-		- 专注过程而不是结果
+>- 为啥有procrastination
+	- things that make us feel uncomfortable
+	- Procrastination is like addiction. It offers temporary excitement and relief from boring reality
+- 影响
+	- 影响心理和生理健康 
+	- The dread of doing a task uses up more time and energy than doing the task itself
+- 如何克服
+	- You should have been studying a little bit all along
+	- 专注过程而不是结果
 
 	
 - For most people, learning math and science depends on two things: brief study sessions where the neural “bricks” are laid, and time in between for the mental mortar to dry
@@ -191,7 +191,7 @@ Make the neural connections needed for normal thinking processes—which is why 
 	- Procrastination can be like taking tiny amounts of poison. It may not seem harmful at the time. But the long-term effects can be very damaging
 
 ## Chapter 6 zombies everywhere
-	如何克服拖延
+>- 如何克服拖延
 	- 本质上是改变习惯
 	- 关注process不是product
 	- 改变信念
@@ -218,17 +218,17 @@ Make the neural connections needed for normal thinking processes—which is why 
 - Be sure to schedule free time to nurture your diffuse mode
 
 ## Chapter 7 chunking versus choking
-	- powerful chunk的优点
-		- Increase Your Expertise and Reduce Anxiety 
-	- 如何形成powerful chunk
-	- 见下方how to build,概括为recall, test, repetition, rest. 2r2t 
-	学习中碰到的其他困难
-	- choking
-		- working memory不够用
-	- knowledge collapse
-		- 之前的理解可能有问题，知识重构ing
-	- 让人想到读书，如果读书不复习的确就忘记了。但是如果每本书都反复读时间不够。只读经典，泛读案例
-	- Enhancements come only after an invention has been out for a while and people have had a chance to mess with it.所以很多事情都要先做，再优化
+>- powerful chunk的优点
+	- Increase Your Expertise and Reduce Anxiety 
+- 如何形成powerful chunk
+- 见下方how to build,概括为recall, test, repetition, rest. 2r2t 
+学习中碰到的其他困难
+- choking
+	- working memory不够用
+- knowledge collapse
+	- 之前的理解可能有问题，知识重构ing
+- 让人想到读书，如果读书不复习的确就忘记了。但是如果每本书都反复读时间不够。只读经典，泛读案例
+- Enhancements come only after an invention has been out for a while and people have had a chance to mess with it.所以很多事情都要先做，再优化
 
 ### How to Build a Powerful Chunk
 - Learning fundamental concepts of math and science can be a lot easier than learning subjects that require a lot of rote memorization
@@ -258,9 +258,9 @@ Make the neural connections needed for normal thinking processes—which is why 
 - Occasionally you can study hard and fate deals a bad hand. But remember the Law of Serendipity: If you prepare well by practicing and building a good mental library, you will find that luck will be increasingly on your side. In other words, you guarantee failure if you don’t try, but those who consistently give it a good effort will experience many more successes
 
 ## Chapter 8 tools, tips, and tricks 
-	- 让自己更加专注可以通过营造环境，去图书馆或者和别人一起学习，也可以通过让电脑、手机免打扰模式
-	- 通过GTD安排周计划，日计划减少workimg memory的压力，更加高效
-	- 以上两种都是让自己的zombie帮助自己
+>- 让自己更加专注可以通过营造环境，去图书馆或者和别人一起学习，也可以通过让电脑、手机免打扰模式
+- 通过GTD安排周计划，日计划减少workimg memory的压力，更加高效
+- 以上两种都是让自己的zombie帮助自己
 
 - a special place devoted just to working is particularly helpful
 - Another trick involves using meditation to help you learn to ignore distracting thoughts.3 (Meditation is not just for New Age types—a lot of science has revealed its value
@@ -284,10 +284,10 @@ Make the neural connections needed for normal thinking processes—which is why 
 - Write your daily task list the evening before
 
 ## Chapter 9 procrastination zombie wrap-up
-	 本章依然讨论拖延
-	- 很多人兴起就工作很久，但是不想干就不干，这样从总体上看可能并没有按照计划每天走的人效率高
-	- 关于willpower的观点，和我之前想的一样。和肌肉一样越练越强，现在的我比上高中、大学好了很多，也了解了更多技巧和方法。总体上而言一句话：凡事预则立
-	- passion这个词被很多人用烂了，如果我们做的好有回报自然有passion，passion和兴趣一样可以培养
+>- 本章依然讨论拖延
+- 很多人兴起就工作很久，但是不想干就不干，这样从总体上看可能并没有按照计划每天走的人效率高
+- 关于willpower的观点，和我之前想的一样。和肌肉一样越练越强，现在的我比上高中、大学好了很多，也了解了更多技巧和方法。总体上而言一句话：凡事预则立
+- passion这个词被很多人用烂了，如果我们做的好有回报自然有passion，passion和兴趣一样可以培养
 
 ### The Pluses and Minuses of Working Unrelentingly in “The Zone
 - People who make a habit of getting their work done in binges are much less productive overall than those who generally do their work in reasonable, limited stints. Staying in the zone too long will send you toward burnout
@@ -328,13 +328,14 @@ Make the neural connections needed for normal thinking processes—which is why 
 - By memorizing material you understand, you can internalize the material in a profound way. And you are reinforcing the mental library you need to become a genuine master of the material
 
 ## Chapter 11 More Memory tips
-	听说读写练
-	- 听：用歌曲
-	- 说：talk to yourself
-	- 读：用脑子读，用metphor
-	- 写：用手写
-	- 练：锻炼身体，记得重复练习
-	
+>- 听说读写练
+- 听：用歌曲
+- 说：talk to yourself
+- 读：用脑子读，用metphor
+- 写：用手写
+- 练：锻炼身体，记得重复练习
+
+
 ### Spaced Repetition to Help Lodge Ideas in Memory
 - Much of what goes on around you is basically trivial—if you remembered it all, you’d end up like a hoarder, trapped in an immense collection of useless memories
 - Repetition is important; even when you make something memorable, repetition helps get that memorable item firmly lodged in long-term memory
@@ -353,10 +354,10 @@ Make the neural connections needed for normal thinking processes—which is why 
 - Exercise is powerfully important in helping your neurons to grow and make new connections
 
 ## Chapter 12 learning to appreciate your talent
-	- 每个人都有自己的长处
-	- 聪明的人固然working memory更大，但是也有自己的问题，心智可能成熟的晚，碰到没遇到的问题容易恐慌，创造力可能一般
-	- 而且working memory可以通过练习得到提高，只要肯付出，可以练习，一切都可以克服
-	- 我自己我感觉并不是特别聪明的人，但是很会融会贯通，学某样新的东西我接受的不是特别快，但是过段时间我的chunk一直在，而且和别的chunk都有联系
+>- 每个人都有自己的长处
+- 聪明的人固然working memory更大，但是也有自己的问题，心智可能成熟的晚，碰到没遇到的问题容易恐慌，创造力可能一般
+- 而且working memory可以通过练习得到提高，只要肯付出，可以练习，一切都可以克服
+- 我自己我感觉并不是特别聪明的人，但是很会融会贯通，学某样新的东西我接受的不是特别快，但是过段时间我的chunk一直在，而且和别的chunk都有联系
 
 ### Work toward an Intuitive Understanding
 - Chess masters, emergency room physicians, fighter pilots, and many other experts often have to make complex decisions rapidly. They shut down their conscious system and instead rely on their well-trained intuition
@@ -376,11 +377,10 @@ Make the neural connections needed for normal thinking processes—which is why 
 - Focusing too intently can inhibit the solution you are seeking—like trying to hammer a screw because you think it’s a nail. When you are stuck, sometimes it’s best to get away from a problem for a while and move on to something else, or to simply sleep on it
 
 ## Chapter 13 sculpting your brain
-	
-	以卡扎尔为例说明了人脑是可以发生巨变的
-	- 脑子里的神经连更多，chunk更多 
-	- 这样学习别的事物时更加方便。融会贯通之后就像打通任督二脉，学习会越来越顺利
-	- 人的脑子可能在20多岁才会发育成熟，之前可能就是学渣，后来变学霸
+>- 以卡扎尔为例说明了人脑是可以发生巨变的
+- 脑子里的神经连更多，chunk更多 
+- 这样学习别的事物时更加方便。融会贯通之后就像打通任督二脉，学习会越来越顺利
+- 人的脑子可能在20多岁才会发育成熟，之前可能就是学渣，后来变学霸
 
 ### Change Your Thoughts, Change Your Life
 - This may explain why teenagers often have trouble controlling their impulsive behavior—the wiring between intention and control areas imppulsive behavior—the wiring between intention and control areas isn’t completely formed
@@ -422,10 +422,10 @@ Make the neural connections needed for normal thinking processes—which is why 
 	- Multitasking during the learning process means you don’t learn as deeply—this can inhibit your ability to transfer what you are learning
 
 ## Chapter 15 renaissance learning
-	- 颠覆关于学习的许多偏见，也让也多人更加有信心
-	- 有些人反应很快，但是慢并不见得不好，因为可能考虑的更加细微，到时可能印象也更深刻
-	- 接触些比你牛的人，也许一句话就能改变你的看法，提升你的境界
-	- 自学并不一定比在学校学习效果差，Persistence is often more important than intelligence
+>- 颠覆关于学习的许多偏见，也让也多人更加有信心
+- 有些人反应很快，但是慢并不见得不好，因为可能考虑的更加细微，到时可能印象也更深刻
+- 接触些比你牛的人，也许一句话就能改变你的看法，提升你的境界
+- 自学并不一定比在学校学习效果差，Persistence is often more important than intelligence
 
 - Persistence is often more important than intelligence
 - Research has shown that students learn best when they themselves are actively engaged in the subject instead of simply listening to someone else speak
@@ -450,11 +450,9 @@ Make the neural connections needed for normal thinking processes—which is why 
 - People are competitive as well as cooperative. There will always be those who criticize or attempt to undermine any effort or achievement you make. Learn to deal dispassionately with these issues
 
 ## Chapter 16 avoiding overconfidence
-思考
-
-	- 通过一个右脑出现功能障碍的例子来说明foucsed mode带来的问题，以及正常人如何避免
-	- focused mode会让人overconfidence，坚信自己是正确的。这个时候需要用左脑来帮助自己检查，用bigger picture。这也是为什么做任何事情要反复检查的原因，要brain storm的原因，多个大脑来帮助你
-	- 以后做任何事情，做完回想思考改进,同时保持谦虚，不要事事认为自己都对的
+- 通过一个右脑出现功能障碍的例子来说明foucsed mode带来的问题，以及正常人如何避免
+- focused mode会让人overconfidence，坚信自己是正确的。这个时候需要用左脑来帮助自己检查，用bigger picture。这也是为什么做任何事情要反复检查的原因，要brain storm的原因，多个大脑来帮助你
+- 以后做任何事情，做完回想思考改进,同时保持谦虚，不要事事认为自己都对的
 
 ### The Power of Teamwork
 - There’s a great deal of evidence from research that the right hemisphere helps us step back and put our work into big-picture perspective
@@ -477,10 +475,9 @@ Make the neural connections needed for normal thinking processes—which is why 
 - It is easiest of all to fool yourself
 
 ## Chapter 17 test taking
-	test的好处以及如何面对test
-	- 帮助自己更快的学习东西，比看资料好很多
-	- 但是要面对考试带来的压力，可以通过writing或者其他自己的方式释放
-	
+>- test的好处以及如何面对test
+- 帮助自己更快的学习东西，比看资料好很多
+- 但是要面对考试带来的压力，可以通过writing或者其他自己的方式释放
 - Testing is itself an extraordinarily powerful learning experience
 
 ### The Hard-Start–Jump-to-Easy Technique
@@ -490,7 +487,7 @@ Make the neural connections needed for normal thinking processes—which is why 
 - We think that writing helps to release negative thoughts from mind, making them less likely to pop up and distract you in the heat of the moment
 
 ## Chapter 18 unlock your potential
-	如何灵活应用以及本书总结
+> 如何灵活应用以及本书总结
 
 - your desire to figure things out right now is what prevents you from being able to figure things out
 - Reshaping your brain is under your control. The key is patient persistence—working knowledgeably with your brain’s strengths and weaknesses
