@@ -18,13 +18,15 @@ categories: wiki
 
 > centos 默认 Python 版本是2.7.5和我使用的一样，故Python 没有升级。/etc/ssh/sshd_config 中设置 PermitRootLogin 设置为 without-password,当然设置之前要先添加 [ssh key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2 添加ssh key)
 
-    
+    ``` 
     yum -y update
     yum -y install python-pip
     yum install python-devel
     yum install mysql-devel
     yum install git-all
     pip install virtualenv
+    ```
+
 
 ### 3. 修改 host
 
