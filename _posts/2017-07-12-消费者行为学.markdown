@@ -73,7 +73,7 @@ categories: 读书笔记
 - 社会阶层判断
     + 职业声望。一个人的职业与他如何打发休闲时间、如何分配家庭资源和政治取向等都高度相关
     + 收入。人们需要金钱来维持他们用产品和服务了表达品位的需求
-    + 社会阶层在预测![象征性消费](http://baike.baidu.com/link?url=qIUF2GgGMJrxVDpUWkodo2E_xwRz3HhAifaa_B66E0X1CHMzSIksfKYt6pwi0TfZzNHMPczWnYWs2bzQMWWjZhmF1hSRtrfsuobB6Mw7A-LyakjxtTnB7BA9mJfhrMm64vTyW9e3WhP2toLWX3h2M_)上更有效
+    + 社会阶层在预测[象征性消费](http://baike.baidu.com/link?url=qIUF2GgGMJrxVDpUWkodo2E_xwRz3HhAifaa_B66E0X1CHMzSIksfKYt6pwi0TfZzNHMPczWnYWs2bzQMWWjZhmF1hSRtrfsuobB6Mw7A-LyakjxtTnB7BA9mJfhrMm64vTyW9e3WhP2toLWX3h2M_)上更有效
     + 收入在预测不含象征意义的主要支出（家庭主要用品）上更有效
     + 社会阶层和收入在预测昂贵的、有象征意义的产品（汽车、房屋）购买力同等重要
 - 奢侈品态度
