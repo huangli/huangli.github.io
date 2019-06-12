@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "卓有成效的管理者"
+title:  "管理的常识"
 date:   2019-06-11 10:34:37
 tags: 管理 
 categories: 读书笔记
