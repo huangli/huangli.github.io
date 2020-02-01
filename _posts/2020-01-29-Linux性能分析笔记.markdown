@@ -9,5 +9,27 @@ categories: 总结
 ### 1. 平衡负载
 
 - 平均负载是指单位时间内,系统处于可运行状态和不可中断状态的平均进程
-数（不可中断状态实际上是系统对进程和硬件设备的一种保护机制。）,也就是平均活跃进程数和CPU使用率没关系。
-- 基本命令:uptime
+数（不可中断状态实际上是系统对进程和硬件设备的一种保护机制。）,也就是平均活跃进程数和CPU使用率没关系。如果数量为2，那么只有2个CPU的系统上，cpu占用率就是100%了，4个cpu就是50%，一个cpu则有一半的进程竞争不到CPU。
+
+## 命令备忘
+
+```shell
+
+# 总核数 = 物理CPU个数 X 每颗物理CPU的核数 
+# 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数
+
+# 查看物理CPU个数
+cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+
+# 查看每个物理CPU中core的个数(即核数)
+cat /proc/cpuinfo| grep "cpu cores"| uniq
+
+# 查看逻辑CPU的个数
+cat /proc/cpuinfo| grep "processor"| wc -l
+
+查看CPU信息（型号）
+cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+
+$uptime
+15:41:01 up 2 days, 21:03,  1 user,  load average: 0.22, 0.33, 0.68
+```
