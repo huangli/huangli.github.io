@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Linux性能分析笔记"
+title:  "Lin u x性能分 析 笔记"
 date:   2020-01-29 6:34:37
-tags: Linux 总结 笔记 2020
-categories: 总结
+tags Linux 总结 笔记 200categories: 总结
 ---
 
 ### 1. 平衡负载
 
-- 平均负载是指单位时间内,系统处于可运行状态和不可中断状态的平均进程
-数（不可中断状态实际上是系统对进程和硬件设备的一种保护机制。）,也就是平均活跃进程数和CPU使用率没关系。如果数量为2，那么只有2个CPU的系统上，cpu占用率就是100%了，4个cpu就是50%，一个cpu则有一半的进程竞争不到CPU。
+- **均载是指单位时间内,系统处于可运行状态和不可中断状态的平均进程
+数**（不可中断状态实际上是系统对进程和硬件设备的一种保护机制。）,也就是平均活跃进程数和CPU使用率没关系。如果数量为 2 ，在只有 2 个 CPU 的系统上,意味着所有的 CPU 都刚好被完全占用。在 4 个CPU 的系统上,意味着 CPU 有 50% 的空闲。而在只有 1 个 CPU 的系统中,则意味着有一半的进程竞争不到 CPU。
+- 平均负载和CPU使用率不同，I/O密集型也会导致平均负载升高，但是CPU使用率不一定很高
 
 ## 命令备忘
 
@@ -19,17 +19,23 @@ categories: 总结
 # 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数
 
 # 查看物理CPU个数
-cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+$ cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+-> 1
 
 # 查看每个物理CPU中core的个数(即核数)
-cat /proc/cpuinfo| grep "cpu cores"| uniq
+$ cat /proc/cpuinfo| grep "cpu cores"| uniq
+-> 4
 
 # 查看逻辑CPU的个数
-cat /proc/cpuinfo| grep "processor"| wc -l
+$ cat /proc/cpuinfo| grep "processor"| wc -l  
+$ grep 'model name' /proc/cpuinfo | wc -l
+-> 8
 
 查看CPU信息（型号）
-cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+$ cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+-> 8  Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
 
+# 2020年02月01日 Ubuntu 查看状态
 $uptime
 15:41:01 up 2 days, 21:03,  1 user,  load average: 0.22, 0.33, 0.68
 ```
