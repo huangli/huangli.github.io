@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Pro git笔记"
+date:   2020-02-06 6:34:37
+tags git 总结 笔记 categories: 总结
+---
+
+### 1. What is git
+
+- To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots.
+- states
+    + **Modified** means that you have changed the file but have not committed it to your database yet
+    + **Staged** means that you have marked a modified file in its current version to go into your next commit snapshot
+    + Committed means that the data is safely stored in your local database
+
+#### Global config 
+
+- /etc/gitconfig
+- ~/.gitconfig or ~/.config/git/config
+- .git/config
+- Each level overrides values in the previous level, so values in .git/config trump those in /etc/gitconfig
+
+
+#### Your Identity
+
+``` 
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+
+#### Help 
+
+``` 
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+$ git add -h
+```
+
+- you can ask for the more concise “help” output with the -h option, as in
+
+
+### 2. Git Basics
+
+> If you can read only one chapter to get going with Git, this is it
+
+- You typically obtain a Git repository in one of two ways:
+    + You can take a local directory that is currently not under version control, and turn it into a Git repository, or
+    + You can clone an existing Git repository from elsewhere.
+
+```
+- git clone https://github.com/libgit2/libgit2
+
+If you want to clone the repository into a directory named something other than libgit2
+- git clone https://github.com/libgit2/libgit2 mylibgit
+```
