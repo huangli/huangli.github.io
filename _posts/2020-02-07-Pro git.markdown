@@ -11,7 +11,7 @@ tags git 总结 笔记 categories: 总结
 - states
     + **Modified** means that you have changed the file but have not committed it to your database yet
     + **Staged** means that you have marked a modified file in its current version to go into your next commit snapshot
-    + Committed means that the data is safely stored in your local database
+    + **Committed** means that the data is safely stored in your local database
 
 #### Global config 
 
@@ -56,5 +56,33 @@ If you want to clone the repository into a directory named something other than 
 - git clone https://github.com/libgit2/libgit2 mylibgit
 ```
 
-- git status -s (more simplified)
+- $ git status -s (more simplified)
 - .gitignore 包含不需要track的文件，可以用正则
+
+```
+Here is another example .gitignore file:
+
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+
+# [https://github.com/github/gitignore](https://github.com/github/gitignore)
+```
+
+
+- --staged and --cached are synonyms
+- 
