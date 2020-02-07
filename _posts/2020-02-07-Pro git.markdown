@@ -55,3 +55,6 @@ $ git add -h
 If you want to clone the repository into a directory named something other than libgit2
 - git clone https://github.com/libgit2/libgit2 mylibgit
 ```
+
+- git status -s (more simplified)
+- .gitignore 包含不需要track的文件，可以用正则
