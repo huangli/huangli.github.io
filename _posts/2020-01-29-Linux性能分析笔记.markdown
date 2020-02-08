@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Lin u x性能分 析 笔记"
+title:  "Linux 性能分析笔记"
 date:   2020-01-29 6:34:37
-tags Linux 总结 笔记 200categories: 总结
+tags: Linux 总结 运维
+categories: 读书笔记
 ---
 
 ### 1. 平衡负载

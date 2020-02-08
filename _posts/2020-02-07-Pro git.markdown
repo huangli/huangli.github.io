@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Pro git笔记"
-date:   2020-02-06 6:34:37
-tags git 总结 笔记 categories: 总结
+title: "Pro git 笔记"
+date: 2020-02-06 6:34:37
+tags: git 英文原版
+categories: 读书笔记
 ---
 
 ### 1. What is git
@@ -45,6 +46,8 @@ $ git add -h
 
 > If you can read only one chapter to get going with Git, this is it
 
+#### 2.2 Recording Changes to the Repository
+
 - You typically obtain a Git repository in one of two ways:
     + You can take a local directory that is currently not under version control, and turn it into a Git repository, or
     + You can clone an existing Git repository from elsewhere.
@@ -85,4 +88,17 @@ doc/**/*.pdf
 
 
 - --staged and --cached are synonyms
-- 
+- git commit -am (-a 自动stag文件)
+- git rm 删除文件
+- 文件移动git不追踪
+- git mv is one command instead of three
+    + $ mv README.md README
+    + $ git rm README.md
+    + $ git add README
+
+#### 2.3 Viewing the Commit History
+
+- git log(之前忘记commit的是什么版本的时候，可以使用)
+- git log -p -2(最近两次commit有啥不同)
+- git log --stat(简单版本)
+- git log --pretty=format:"%h - %an, %ar : %s"(alias gh='git log'，方便以后看)
