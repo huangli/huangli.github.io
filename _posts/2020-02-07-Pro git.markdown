@@ -28,7 +28,7 @@ categories: 读书笔记
 
 #### Your Identity
 
-``` 
+```shell 
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
@@ -36,7 +36,7 @@ $ git config --global user.email johndoe@example.com
 
 #### Help 
 
-``` 
+```shell
 $ git help <verb>
 $ git <verb> --help
 $ man git-<verb>
