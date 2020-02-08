@@ -163,11 +163,30 @@ Fetching and Pulling from Your Remotes
 $ git fetch <remote>
 
 #  git pull command to automatically fetch and then merge that remote branch into your current branch.
-$ git pull
+$ git pull```
 ```
 
 Pushing to remotes
 ```
 # This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime.
 $ git push origin master
+```
+
+Inspecting a Remote
+```
+$ git remote show origin (gr show origin)
+```
+
+Renaming and Removing Remotes
+```
+$ git remote rename pb paul
+$ git remote
+origin
+paul
+```
+
+```
+$ git remote remove paul
+$ git remote
+origin
 ```
