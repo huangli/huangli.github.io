@@ -145,19 +145,19 @@ $ git reset HEAD CONTRIBUTING.md
 
 > 本地多个远程仓库，如何操作？没明白，岂不是容易混乱
 
-Show your remote
+##### Show your remote
 ```
 $ git remote (gr)
 $ git remote -v (gr -v)
 ```
 
-Adding remote repositories
+#####  Adding remote repositories
 ```
 $ git remote add pb https://github.com/paulboone/ticgit
 $ git remote -v
 ```
 
-Fetching and Pulling from Your Remotes
+##### Fetching and Pulling from Your Remotes
 ```
 # git fetch command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. 
 $ git fetch <remote>
@@ -166,18 +166,18 @@ $ git fetch <remote>
 $ git pull```
 ```
 
-Pushing to remotes
+##### Pushing to remotes
 ```
 # This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime.
 $ git push origin master
 ```
 
-Inspecting a Remote
+##### Inspecting a Remote
 ```
 $ git remote show origin (gr show origin)
 ```
 
-Renaming and Removing Remotes
+##### Renaming and Removing Remotes
 ```
 $ git remote rename pb paul
 $ git remote
@@ -189,4 +189,48 @@ paul
 $ git remote remove paul
 $ git remote
 origin
+```
+
+
+#### 2.6 Tagging
+
+- Like most VCSs, Git has the ability to tag specific points in a repository’s history as being important. Typically, people use this functionality to mark release points (v1.0, v2.0 and so on). 
+
+##### Creating tags
+- A **lightweight** tag is very much like a branch that doesn’t change — it’s just a pointer to a specific commit
+- Annotated tags, however, are stored as full objects in the Git database.
+
+##### Annotated Tags
+```
+$ git tag -a v1.4 -m "my version 1.4"
+$ git show v1.4
+
+把之前的历史记录标记
+$ git tag -a v1.2 9fceb02
+```
+
+##### Lightweight Tags
+```
+$ git tag v1.4-lw
+$ git tag
+```
+
+##### Sharing Tags
+```
+$ git push origin v1.5
+$ git push origin --tags
+```
+
+##### Deleting Tags
+```
+# 本地删除
+$ git tag -d v1.4-lw
+# server 删除
+$ git push origin --delete <tagname>
+```
+
+##### Checking out Tags
+- 问题：detached HEAD 是啥意思？
+```
+$ git checkout 2.0.0
 ```
