@@ -5,6 +5,7 @@ date: 2016-06-04 10:34:37
 tags: Linux Nginx Gunicorn 运维  
 categories: wiki
 ---
+{% include ext/toc %}
 
 ## 一. 简介
  租的阿里云Centos 7.0, 使用 Nginx 和 Gunicorn部署 Flask，部署也是第一次，碰到好多问题，做个wiki 方便下次。

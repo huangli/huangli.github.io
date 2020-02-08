@@ -5,6 +5,7 @@ date: 2017-07-12 10:34:37
 tags: 市场营销 工商管理
 categories: 读书笔记
 ---
+{% include ext/toc %}
 
 ## 消费者和亚文化
 

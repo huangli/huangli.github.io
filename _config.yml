@@ -1,4 +1,6 @@
 #markdown: rdiscount
+# 2020年02月08日 修改，为了TOC
+markdown: kramdown
 permalink: /:title/
 url: http://huangli.github.io
 #highlighter: pygments

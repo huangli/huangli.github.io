@@ -5,6 +5,7 @@ date: 2018-01-03 10:34:37
 tags: 哲学 叔本华
 categories: 读书笔记
 ---
+{% include ext/toc %}
 
 ## 第一章 基本的划分
 

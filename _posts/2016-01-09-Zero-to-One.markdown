@@ -5,6 +5,7 @@ date:   2016-01-09 22:34:37
 tags: 创业 互联网 英文原版
 categories: 读书笔记
 ---
+{% include ext/toc %}
 
 一些关于《Zero To One》的心得和体会，有些非常有启发的观点，值得一读。
 

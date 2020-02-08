@@ -5,6 +5,7 @@ date: 2017-03-26 10:34:37
 tags: 教育
 categories: 读书笔记
 ---
+{% include ext/toc %}
 
 ## 第一章 空洞素质论
 

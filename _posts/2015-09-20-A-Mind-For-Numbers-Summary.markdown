@@ -5,6 +5,7 @@ date:   2015-09-20 10:58:37
 tags: 心理学 如何学习 英文原版
 categories: 读书笔记
 ---
+{% include ext/toc %}
 
 ## foreword
 - Your brain has amazing abilities, but it did not come with an instruction manual. You’ll find that manual in A Mind for Numbers

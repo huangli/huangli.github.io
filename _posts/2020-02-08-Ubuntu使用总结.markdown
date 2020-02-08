@@ -5,6 +5,7 @@ date:   2020-02-08 6:34:37
 tags: Linux Ubuntu v2ray ssh git
 categories: wiki
 ---
+{% include ext/toc %}
 
 最近重新捡起来 Linux ，把 Dell 笔记本变成了 Ubuntu，因为疫情强迫自己用 Ubuntu 变成办公主力，以下是一些记录和体会。
 
@@ -63,9 +64,9 @@ crontab 任务定义，不怕安装了插件以后换了电脑会丢失，当然
     + 安装配置完成之后可以根据 service v2ray status查看状态
     + 如果更改了配置就要重启 v2ray 服务， service v2ray restart
 
-```
-原声客户端配置
-修改其中的**节点地址**和**V2Ray UUID**。confi默认位置在 /etc/v2ray/config.json
+```shell
+# 客户端配置
+# 修改其中的**节点地址**和**V2Ray UUID**。confi默认位置在 /etc/v2ray/config.json
 {
   "inbounds": [
     {
@@ -114,7 +115,7 @@ crontab 任务定义，不怕安装了插件以后换了电脑会丢失，当然
     + 设置新的Pfofile，Proxy socks5, 端口 1080（这个根据上面 v2ray 配置文件来的)
 - git ssh。如果用 ssh 方式操作 git，也要配置 ssh 的配置文件，默认路径 ~/.ssh/config，配置如下，注意端口号要和v2ray的配置一样
 
-```
+```shell
 # ssh config
 Host github.com
 Hostname github.com
@@ -142,15 +143,15 @@ ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 ```
 
 
-### 3. 体会感受
+### 4. 体会感受
 
-### 3.1 如何入门
+#### 4.1 如何入门
 
 - Linux 的入门资料很多，[《鸟哥的私房菜》](http://cn.linux.vbird.org/)看完，再把 vim 好好学学，就可以了
 - 接下来用 Python 搭建一个 Web 的 demo  
 - Linux 博大精深，看到了 Netflix 的 Linux 大牛 [Brendan Gregg](http://www.brendangregg.com/) 博客，就知道这的确水太深，有空可以好好学学
 
-### 3.2 感受
+#### 4.2 感受
 
 - Ubuntu 的确强大，如果应用软件体验能更好一点，更多的小白用户也会喜欢使用的。QQ 在 Linux下就是上个世纪的感觉，免费的东西虽好，但是想要长久还是要付费啊。如果Linus 不在了，不知道Linux 会如何发展
 - 学习 Linux 需要太多前置的知识，这对于小白用户来说很痛苦，一定要做个实际的小项目，然后回过头来再系统的学习。这我觉得是个好方法 

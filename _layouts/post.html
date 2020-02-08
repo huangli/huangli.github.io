@@ -13,10 +13,7 @@ layout: default
     <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
     {% endfor %}
   </span>
-  {% endif %}
-  {% if page.tags.size != 0 %}
-  | 
-  <span class="tags">
+  {% endif %} {% if page.tags.size != 0 %}
     标签
     {% for tag in page.tags %}
     <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;

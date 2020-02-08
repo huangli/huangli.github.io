@@ -5,6 +5,7 @@ date:   2015-11-20 15:34:37
 tags: R 英文原版
 categories: 读书笔记
 ---
+{% include ext/toc %}
 
 ## 概述
 用来探索数据的工具不少，比如不需要任何编程经验的[Tableau](http://www.tableau.com/)、Excel等，

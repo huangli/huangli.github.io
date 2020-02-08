@@ -5,6 +5,7 @@ date:   2015-10-24 15:34:37
 tags: R
 categories: 笔记
 ---
+{% include ext/toc %}
 
 
 # 概述

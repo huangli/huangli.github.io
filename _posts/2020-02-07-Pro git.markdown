@@ -5,6 +5,7 @@ date: 2020-02-06 6:34:37
 tags: git 英文原版
 categories: 读书笔记
 ---
+{% include ext/toc %}
 
 - [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
 
