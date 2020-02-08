@@ -6,6 +6,8 @@ tags: git 英文原版
 categories: 读书笔记
 ---
 
+- [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
+
 ### 1. What is git
 
 - To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots.
@@ -13,6 +15,7 @@ categories: 读书笔记
     + **Modified** means that you have changed the file but have not committed it to your database yet
     + **Staged** means that you have marked a modified file in its current version to go into your next commit snapshot
     + **Committed** means that the data is safely stored in your local database
+- modified 就是你现在已经外出了，可能已经被病毒感染了，staged 就是已经进了医院观察治疗，committed 就是通过试剂确认无毒无害。
 
 #### Global config 
 
@@ -44,7 +47,7 @@ $ git add -h
 
 ### 2. Git Basics
 
-> If you can read only one chapter to get going with Git, this is it
+> 基本操作
 
 #### 2.2 Recording Changes to the Repository
 
@@ -98,7 +101,73 @@ doc/**/*.pdf
 
 #### 2.3 Viewing the Commit History
 
+> 对于团队来说 log history 就是发现谁引入了问题
+
 - git log(之前忘记commit的是什么版本的时候，可以使用)
 - git log -p -2(最近两次commit有啥不同)
 - git log --stat(简单版本)
-- git log --pretty=format:"%h - %an, %ar : %s"(alias gh='git log'，方便以后看)
+- git log --pretty=format:"%h - %an, %ar : %s" (alias gh='git log'，方便以后看)
+- git log --since=2.weeks (可以通过时间筛选--since, --after, --until, --before, --grep)
+- git log -S function_name (根据名称来匹配)
+
+```
+# 大型项目，谁的代码引入了问题，直接通过 log 查看非常方便
+$ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
+   --before="2008-11-01" --no-merges -- t/
+5610e3b - Fix testcase failure when extended attributes are in use
+acd3b9e - Enhance hold_lock_file_for_{update,append}() API
+f563754 - demonstrate breakage of detached checkout with symbolic link HEAD
+d1a43f2 - reset --hard/read-tree --reset -u: remove unmerged new paths
+51a94af - Fix "checkout --track -b newbranch" on detached HEAD
+b0ad11e - pull: allow "git pull origin $something:$current_branch" into an unborn branch
+```
+
+
+#### 2.4 Undoing Things
+
+> 如果是自己忘记了某些文件，可以再加一个commit，如果团队的话每一个commit 都要有意义，最好不要加上版本号，让整个版本看起来更麻烦
+
+合并commit
+```
+# 第二次的 commit 会代替第一次,第一次不会出现在repository history中
+$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend
+```
+
+让文件变成unstaged 状态
+```
+$ git reset HEAD CONTRIBUTING.md
+```
+
+
+#### 2.5 Working with Remotes
+
+> 本地多个远程仓库，如何操作？没明白，岂不是容易混乱
+
+Show your remote
+```
+$ git remote (gr)
+$ git remote -v (gr -v)
+```
+
+Adding remote repositories
+```
+$ git remote add pb https://github.com/paulboone/ticgit
+$ git remote -v
+```
+
+Fetching and Pulling from Your Remotes
+```
+# git fetch command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. 
+$ git fetch <remote>
+
+#  git pull command to automatically fetch and then merge that remote branch into your current branch.
+$ git pull
+```
+
+Pushing to remotes
+```
+# This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime.
+$ git push origin master
+```
