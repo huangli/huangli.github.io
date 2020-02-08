@@ -69,6 +69,7 @@ task :post do
     post.puts ""
     post.puts ""
     post.puts "---"
+    post.puts "{% include ext/toc \}" ###########这一行是添加的代码（\是为了转义，需要去掉）############
   end
 end # task :post
 
