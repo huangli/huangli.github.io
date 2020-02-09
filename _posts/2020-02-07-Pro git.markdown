@@ -7,7 +7,7 @@ categories: 读书笔记
 ---
 {% include ext/toc %}
 
-- [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
+- git 的 alias方便操作 [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
 
 ### 1. What is git
 
@@ -56,17 +56,17 @@ $ git add -h
     + You can take a local directory that is currently not under version control, and turn it into a Git repository, or
     + You can clone an existing Git repository from elsewhere.
 
-```
-- git clone https://github.com/libgit2/libgit2
+```shell
+$ git clone https://github.com/libgit2/libgit2
 
-If you want to clone the repository into a directory named something other than libgit2
-- git clone https://github.com/libgit2/libgit2 mylibgit
+# If you want to clone the repository into a directory named something other than libgit2
+$ git clone https://github.com/libgit2/libgit2 mylibgit
 ```
 
 - $ git status -s (more simplified)
 - .gitignore 包含不需要track的文件，可以用正则
 
-```
+```shell
 Here is another example .gitignore file:
 
 # ignore all .a files
@@ -111,8 +111,9 @@ doc/**/*.pdf
 - git log --since=2.weeks (可以通过时间筛选--since, --after, --until, --before, --grep)
 - git log -S function_name (根据名称来匹配)
 
-```
+```shell
 # 大型项目，谁的代码引入了问题，直接通过 log 查看非常方便
+
 $ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
    --before="2008-11-01" --no-merges -- t/
 5610e3b - Fix testcase failure when extended attributes are in use
@@ -129,7 +130,7 @@ b0ad11e - pull: allow "git pull origin $something:$current_branch" into an unbor
 > 如果是自己忘记了某些文件，可以再加一个commit，如果团队的话每一个commit 都要有意义，最好不要加上版本号，让整个版本看起来更麻烦
 
 合并commit
-```
+```shell
 # 第二次的 commit 会代替第一次,第一次不会出现在repository history中
 $ git commit -m 'initial commit'
 $ git add forgotten_file
@@ -137,7 +138,7 @@ $ git commit --amend
 ```
 
 让文件变成unstaged 状态
-```
+```shell
 $ git reset HEAD CONTRIBUTING.md
 ```
 
@@ -147,46 +148,47 @@ $ git reset HEAD CONTRIBUTING.md
 > 本地多个远程仓库，如何操作？没明白，岂不是容易混乱
 
 ##### Show your remote
-```
+```shell
 $ git remote (gr)
 $ git remote -v (gr -v)
 ```
 
 #####  Adding remote repositories
-```
+```shell
 $ git remote add pb https://github.com/paulboone/ticgit
 $ git remote -v
 ```
 
 ##### Fetching and Pulling from Your Remotes
-```
+```shell
 # git fetch command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. 
 $ git fetch <remote>
 
 #  git pull command to automatically fetch and then merge that remote branch into your current branch.
-$ git pull```
+$ git pull
 ```
 
 ##### Pushing to remotes
-```
+
+```shell
 # This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime.
 $ git push origin master
 ```
 
 ##### Inspecting a Remote
-```
+```shell
 $ git remote show origin (gr show origin)
 ```
 
 ##### Renaming and Removing Remotes
-```
+```shell
 $ git remote rename pb paul
 $ git remote
 origin
 paul
 ```
 
-```
+```shell
 $ git remote remove paul
 $ git remote
 origin
@@ -202,28 +204,28 @@ origin
 - Annotated tags, however, are stored as full objects in the Git database.
 
 ##### Annotated Tags
-```
+```shell
 $ git tag -a v1.4 -m "my version 1.4"
 $ git show v1.4
 
-把之前的历史记录标记
+#把之前的历史记录标记
 $ git tag -a v1.2 9fceb02
 ```
 
 ##### Lightweight Tags
-```
+```shell
 $ git tag v1.4-lw
 $ git tag
 ```
 
 ##### Sharing Tags
-```
+```shell
 $ git push origin v1.5
 $ git push origin --tags
 ```
 
 ##### Deleting Tags
-```
+```shell
 # 本地删除
 $ git tag -d v1.4-lw
 # server 删除
@@ -231,7 +233,31 @@ $ git push origin --delete <tagname>
 ```
 
 ##### Checking out Tags
-- 问题：detached HEAD 是啥意思？
+```shell
+# (2.0.0 就是一个tag)
+$ git checkout 2.0.0 
 ```
-$ git checkout 2.0.0
+
+
+### 3. Git Branching
+
+#### 3.1 Branches in a Nutshell
+
+git init 只是默认创建一个master branch，并没有什么特殊的，也可以命名成别的
+
+##### Creating a New Branch
+```shell
+# 创建了新的branch，指针 HEAD 指向当前正在指向的分支
+$ git branch testing
+
+# 看当前指针指向
+$ git log --oneline --decorate
+
+    52c9468 (HEAD -> master, testing) master v1.0
+    183208e test
 ```
+
+fds 
+fdsf
+
+
