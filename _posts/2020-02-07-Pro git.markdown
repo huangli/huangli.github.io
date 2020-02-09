@@ -362,6 +362,8 @@ $ git ls-remote
 $ git clone -o booyah
 ```
 
+### Fetch
+
 ```terminal
 # To synchronize your work with a given remote
 $ git fetch origin
@@ -373,3 +375,4 @@ $ git fetch origin
 # git push <remote> <branch>
 git push origin serverfix
 ```
+
