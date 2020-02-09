@@ -335,3 +335,6 @@ $ git mergetool
 
 ## 3.2 Branch Management
 
+```terminal
+$ git branch --merged
+```
