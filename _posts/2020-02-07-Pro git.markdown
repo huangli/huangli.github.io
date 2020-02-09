@@ -7,9 +7,9 @@ categories: 读书笔记
 ---
 {% include ext/toc %}
 
-- git 的 alias方便操作 [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
+- Git 在 ZSH 下的快捷操作 [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
 
-### 1. What is git
+# 1. What is git
 
 - To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots.
 - states
@@ -18,7 +18,7 @@ categories: 读书笔记
     + **Committed** means that the data is safely stored in your local database
 - modified 就是你现在已经外出了，可能已经被病毒感染了，staged 就是已经进了医院观察治疗，committed 就是通过试剂确认无毒无害。
 
-#### Global config 
+## 1.1 Global config 
 
 - /etc/gitconfig
 - ~/.gitconfig or ~/.config/git/config
@@ -26,17 +26,17 @@ categories: 读书笔记
 - Each level overrides values in the previous level, so values in .git/config trump those in /etc/gitconfig
 
 
-#### Your Identity
+## 1.2 Your Identity
 
-```shell 
+```terminal 
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
 
 
-#### Help 
+## 1.3 Help 
 
-```shell
+```terminal
 $ git help <verb>
 $ git <verb> --help
 $ man git-<verb>
@@ -46,17 +46,17 @@ $ git add -h
 - you can ask for the more concise “help” output with the -h option, as in
 
 
-### 2. Git Basics
+# 2. Git Basics
 
 > 基本操作
 
-#### 2.2 Recording Changes to the Repository
+## 2.2 Recording Changes to the Repository
 
 - You typically obtain a Git repository in one of two ways:
     + You can take a local directory that is currently not under version control, and turn it into a Git repository, or
     + You can clone an existing Git repository from elsewhere.
 
-```shell
+```terminal
 $ git clone https://github.com/libgit2/libgit2
 
 # If you want to clone the repository into a directory named something other than libgit2
@@ -66,7 +66,7 @@ $ git clone https://github.com/libgit2/libgit2 mylibgit
 - $ git status -s (more simplified)
 - .gitignore 包含不需要track的文件，可以用正则
 
-```shell
+```terminal
 Here is another example .gitignore file:
 
 # ignore all .a files
@@ -100,7 +100,7 @@ doc/**/*.pdf
     + $ git rm README.md
     + $ git add README
 
-#### 2.3 Viewing the Commit History
+## 2.3 Viewing the Commit History
 
 > 对于团队来说 log history 就是发现谁引入了问题
 
@@ -111,7 +111,7 @@ doc/**/*.pdf
 - git log --since=2.weeks (可以通过时间筛选--since, --after, --until, --before, --grep)
 - git log -S function_name (根据名称来匹配)
 
-```shell
+```terminal
 # 大型项目，谁的代码引入了问题，直接通过 log 查看非常方便
 
 $ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
@@ -125,12 +125,12 @@ b0ad11e - pull: allow "git pull origin $something:$current_branch" into an unbor
 ```
 
 
-#### 2.4 Undoing Things
+## 2.4 Undoing Things
 
 > 如果是自己忘记了某些文件，可以再加一个commit，如果团队的话每一个commit 都要有意义，最好不要加上版本号，让整个版本看起来更麻烦
 
 合并commit
-```shell
+```terminal
 # 第二次的 commit 会代替第一次,第一次不会出现在repository history中
 $ git commit -m 'initial commit'
 $ git add forgotten_file
@@ -138,29 +138,29 @@ $ git commit --amend
 ```
 
 让文件变成unstaged 状态
-```shell
+```terminal
 $ git reset HEAD CONTRIBUTING.md
 ```
 
 
-#### 2.5 Working with Remotes
+## 2.5 Working with Remotes
 
 > 本地多个远程仓库，如何操作？没明白，岂不是容易混乱
 
-##### Show your remote
-```shell
+### Show your remote
+```terminal
 $ git remote (gr)
 $ git remote -v (gr -v)
 ```
 
-#####  Adding remote repositories
-```shell
+###  Adding remote repositories
+```terminal
 $ git remote add pb https://github.com/paulboone/ticgit
 $ git remote -v
 ```
 
-##### Fetching and Pulling from Your Remotes
-```shell
+### Fetching and Pulling from Your Remotes
+```terminal
 # git fetch command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. 
 $ git fetch <remote>
 
@@ -168,43 +168,43 @@ $ git fetch <remote>
 $ git pull
 ```
 
-##### Pushing to remotes
+### Pushing to remotes
 
-```shell
+```terminal
 # This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime.
 $ git push origin master
 ```
 
-##### Inspecting a Remote
-```shell
+### Inspecting a Remote
+```terminal
 $ git remote show origin (gr show origin)
 ```
 
-##### Renaming and Removing Remotes
-```shell
+### Renaming and Removing Remotes
+```terminal
 $ git remote rename pb paul
 $ git remote
 origin
 paul
 ```
 
-```shell
+```terminal
 $ git remote remove paul
 $ git remote
 origin
 ```
 
 
-#### 2.6 Tagging
+## 2.6 Tagging
 
 - Like most VCSs, Git has the ability to tag specific points in a repository’s history as being important. Typically, people use this functionality to mark release points (v1.0, v2.0 and so on). 
 
-##### Creating tags
+### Creating tags
 - A **lightweight** tag is very much like a branch that doesn’t change — it’s just a pointer to a specific commit
 - Annotated tags, however, are stored as full objects in the Git database.
 
-##### Annotated Tags
-```shell
+### Annotated Tags
+```terminal
 $ git tag -a v1.4 -m "my version 1.4"
 $ git show v1.4
 
@@ -212,52 +212,102 @@ $ git show v1.4
 $ git tag -a v1.2 9fceb02
 ```
 
-##### Lightweight Tags
-```shell
+### Lightweight Tags
+```terminal
 $ git tag v1.4-lw
 $ git tag
 ```
 
-##### Sharing Tags
-```shell
+### Sharing Tags
+```terminal
 $ git push origin v1.5
 $ git push origin --tags
 ```
 
-##### Deleting Tags
-```shell
+### Deleting Tags
+```terminal
 # 本地删除
 $ git tag -d v1.4-lw
 # server 删除
 $ git push origin --delete <tagname>
 ```
 
-##### Checking out Tags
-```shell
+### Checking out Tags
+```terminal
 # (2.0.0 就是一个tag)
 $ git checkout 2.0.0 
 ```
 
 
-### 3. Git Branching
+# 3. Git Branching
 
-#### 3.1 Branches in a Nutshell
+## 3.1 Branches in a Nutterminal
 
 git init 只是默认创建一个master branch，并没有什么特殊的，也可以命名成别的
 
-##### Creating a New Branch
-```shell
+### Creating a New Branch
+```terminal
 # 创建了新的branch，指针 HEAD 指向当前正在指向的分支
 $ git branch testing
 
 # 看当前指针指向
 $ git log --oneline --decorate
-
     52c9468 (HEAD -> master, testing) master v1.0
     183208e test
 ```
 
-fds 
-fdsf
 
+### Switching Branches
+
+a branch in Git is actually a simple file that contains the 40 character SHA-1 checksum of the commit it points to. 如果同一份文件有改动， git 如何处理？
+```terminal
+$ git checkout testing (gco testing, gcm 是直接到 master)
+$ gst
+On branch testing
+nothing to commit, working tree clean
+
+# 这个时候 testing branch 的文件比 master 多一个
+$ vim test.rb
+$ ga .
+$ gc -m "testing branch, first commit"
+
+# 看commit 记录
+$ git log --oneline --decorate --graph --all
+
+# Creating a new branch and switching to it at the same time
+git checkout -b (gcb)
+```
+
+## 3.2 Basic Branching and Merging
+
+真实工作场景
+```terminal
+$ git checkout -b iss53
+
+# This is shorthand for:
+$ git branch iss53
+$ git checkout iss53
+```
+###  Create a branch to add the hotfix.
+
+```terminal
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+$ vim index.html
+$ git commit -a -m 'fixed the broken email address'
+[hotfix 1fb7853] fixed the broken email address
+ 1 file changed, 2 insertions(+)
+```
+###  After it’s tested, merge the hotfix branch, and push to production.
+
+```terminal
+$ git checkout master
+$ git merge hotfix
+Updating f42c576..3a0874c
+Fast-forward
+ index.html | 2 ++
+ 1 file changed, 2 insertions(+)
+```
+
+###  Switch back to your original user story and continue working.
 

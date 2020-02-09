@@ -9,7 +9,7 @@ categories: wiki
 
 最近重新捡起来 Linux ，把 Dell 笔记本变成了 Ubuntu，因为疫情强迫自己用 Ubuntu 变成办公主力，以下是一些记录和体会。
 
-### 1. 常用工具
+# 1. 常用工具
 
 - 输入法:[搜狗输入法](https://pinyin.sogou.com/)。安装和配置参考下面链接
     + [输入法配置](https://blog.csdn.net/u010648921/article/details/82624219)
@@ -19,9 +19,9 @@ categories: wiki
 - [Tilix](https://gnunn1.github.io/tilix-web/) 比默认终端强大，分屏很方便
 
 
-### 2. 文本输入
+# 2. 文本输入
 
-#### 2.1 Sublime 
+## 2.1 Sublime 
 
 - [Sublime](https://www.sublimetext.com/)
 - Sublime的一些配置[备份](https://github.com/huangli/sublime-user-package)
@@ -29,11 +29,11 @@ categories: wiki
 
 ```
 #!/bin/bash
-####################################
+############
 #
 # Backup sublime User folder to github
 #
-####################################
+############
 
 cd $HOME/.config/sublime-text-3/Packages/User
 git add .
@@ -49,14 +49,14 @@ crontab 任务定义，不怕安装了插件以后换了电脑会丢失，当然
 ```
 
 
-#### 2.2 Vim
+## 2.2 Vim
 
 - Fork amix的[vim配置](https://github.com/huangli/vimrc)，用 basic 就好了，vim 只是当成文本编辑工具，写 shell。 Sublime 下还是开启 vintage 模式，毕竟 vim 的快捷键还是非常方便的。 
 
 
-### 3. 科学上网
+# 3. 科学上网
 
-#### 3.1 V2ray
+## 3.1 V2ray
 
 - 可以自己购买 vps ，我是选择的第三方的 [v2ray]( https://agneo.co/?rc=63f6163366c565587ad7711fb720afc8) ，目前已经使用了几年非常不错。
 - 安装和配置
@@ -143,15 +143,15 @@ ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 ```
 
 
-### 4. 体会感受
+# 4. 体会感受
 
-#### 4.1 如何入门
+## 4.1 如何入门
 
 - Linux 的入门资料很多，[《鸟哥的私房菜》](http://cn.linux.vbird.org/)看完，再把 vim 好好学学，就可以了
 - 接下来用 Python 搭建一个 Web 的 demo  
 - Linux 博大精深，看到了 Netflix 的 Linux 大牛 [Brendan Gregg](http://www.brendangregg.com/) 博客，就知道这的确水太深，有空可以好好学学
 
-#### 4.2 感受
+## 4.2 感受
 
 - Ubuntu 的确强大，如果应用软件体验能更好一点，更多的小白用户也会喜欢使用的。QQ 在 Linux下就是上个世纪的感觉，免费的东西虽好，但是想要长久还是要付费啊。如果Linus 不在了，不知道Linux 会如何发展
 - 学习 Linux 需要太多前置的知识，这对于小白用户来说很痛苦，一定要做个实际的小项目，然后回过头来再系统的学习。这我觉得是个好方法 

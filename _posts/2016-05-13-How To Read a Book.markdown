@@ -7,10 +7,10 @@ categories: 读书笔记
 ---
 {% include ext/toc %}
 
-### 总体感受
+# 总体感受
 是一本值得反复研读的书，虽然我已经大学毕业好多年，但是对于读书方法其实掌握的并不好。一旦要自己去学习某块新东西的时候，才是真正考验自己学习能力和方法论的时候，而对于这块能力的培养，学校没有人交，只有自己体会了。所以这本书非常非常适合在中国教育体制下长大的人，或者对自己读书方法还没有形成体系的人。
 
-### 收获
+# 收获
 1. 读书四境界
     - 概括为认字、泛读，精读、研究阅读。目前我个人处于精读这个阶段，而且掌握的还不太好。主要谈谈精读和研究阅读
     - 精读
@@ -24,7 +24,7 @@ categories: 读书笔记
     - 整理结构
         + 只有整理出书的结构，作者论证的顺序，这样才能更好的理解作者，并内化成自己的东西。否则就像猪八戒吞人参果一样。
 
-### 摘抄
+# 摘抄
 - What Good Books Can Do for Us
     + You must tackle books that are beyond you, or, as we have said, books that are over your head. Only books of that sort will make you stretch your mind. And unless you stretch, you will not learn
     + First, there is the improvement in your reading skill that occurs when you successfully tackle a good, difficult work. Second—and this in the long run is much more important —a good book can teach you about the world and about yourself
