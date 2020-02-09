@@ -333,8 +333,43 @@ index.html |    1 +
 $ git mergetool
 ```
 
-## 3.2 Branch Management
+## 3.3 Branch Management
 
 ```terminal
+# merged 和 no-merged 可以看branch 情况，先要到master ，如果已经merge 就可以删除没用的 branch, 如果没用merge , git branch -d 会失败
+$ git branch --no-merged
 $ git branch --merged
+
+# 如果不想checkout
+$ git branch --no-merged master
+```
+
+## 3.4 Branching Workflows
+
+- Many Git developers have a workflow that embraces this approach, such as having only code that is entirely stable in their master branch — possibly only code that has been or will be released. They have another parallel branch named develop or next that they work from or use to test stability
+- When you’re branching and merging, everything is being done only in your Git repository — there is no communication with the server
+
+## 3.5 Remote Branches
+
+```terminal
+# 显示remote 的branch
+$ git ls-remote
+```
+
+```terminal
+# origin” is the default name for a remote when you run git clone. 
+# booyah/master 如果执行下面的命令，origin 就被替换了
+$ git clone -o booyah
+```
+
+```terminal
+# To synchronize your work with a given remote
+$ git fetch origin
+```
+
+### Pushing
+
+```terminal
+# git push <remote> <branch>
+git push origin serverfix
 ```
