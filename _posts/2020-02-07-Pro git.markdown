@@ -307,7 +307,31 @@ Updating f42c576..3a0874c
 Fast-forward
  index.html | 2 ++
  1 file changed, 2 insertions(+)
+
+# 删除hotfix
+$ git branch -d hotfix
+Deleted branch hotfix (3a0874c).
 ```
 
 ###  Switch back to your original user story and continue working.
+
+```terminal
+$ git checkout master
+Switched to branch 'master'
+$ git merge iss53
+Merge made by the 'recursive' strategy.
+index.html |    1 +
+1 file changed, 1 insertion(+)
+
+```
+
+### Basic Merge Conflicts
+
+同一个文件的修改就很有可能碰到merge 不了，要仔细对比
+```terminal
+# visual merge tool and walks you through the conflicts
+$ git mergetool
+```
+
+## 3.2 Branch Management
 
