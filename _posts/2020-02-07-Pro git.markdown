@@ -396,6 +396,7 @@ $ git push origin <your_branch_name> -f
 
 - In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase
 - rebasing makes for a cleaner history, 让整个脉络更加清晰，但是也隐藏了历史。Merge 则不同，如实反应，但是可能路径比较乱
+- ou should never rebase commits once they've been pushed to a public repository
 ```terminal
 $ git checkout experiment
 $ git rebase master
@@ -403,3 +404,25 @@ First, rewinding head to replay your work on top of it...
 Applying: added staged command
 ```
 
+# 5. Distributed Git
+
+## 5.1 Distributed Workflows
+
+### Centralized Workflow
+
+![Centralized workflow](https://git-scm.com/book/en/v2/images/centralized_workflow.png)
+- This concept is as true in Git as it is in Subversion (or any CVCS), and this model works perfectly well in Git.
+- With Git’s branching model, it’s possible for hundreds of developers to successfully work on a single project through dozens of branches simultaneously.
+
+### Integration-Manager Workflow
+
+![Integration-manager workflow](https://git-scm.com/book/en/v2/images/integration-manager.png)
+
+-  One of the main advantages of this approach is that you can continue to work, and the maintainer of the main repository can pull in your changes at any time
+-  这就是 GitHub 的方式， fork 一下开始自己的project， 每个人有自己独立的，也可以相互 pull
+
+### Dictator and Lieutenants Workflow
+
+![Dictator](https://git-scm.com/book/en/v2/images/benevolent-dictator.png)
+- One famous example is the Linux kernel
+- This kind of workflow isn’t common, but can be useful in very big projects, or in highly hierarchical environments. 
