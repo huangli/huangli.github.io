@@ -7,6 +7,10 @@ categories: 读书笔记
 ---
 {% include ext/toc %}
 
+# 参考资料
+
+- [Atassian git tutorials](https://www.atlassian.com/git/tutorials/making-a-pull-request)
+- [Pro Git](https://git-scm.com/book/en/v2/)
 - Git 在 ZSH 下的快捷操作 [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
 
 # 1. What is git
@@ -364,15 +368,38 @@ $ git clone -o booyah
 
 ### Fetch
 
+强制fetch, 参考 [W3doc](https://www.w3docs.com/snippets/git/how-to-force-git-pull-to-override-local-files.html)
 ```terminal
-# To synchronize your work with a given remote
+# To synchronize your work with a given remote, 所有的分支都会下载
 $ git fetch origin
+# 下载某一个分支
+$ git fetch origin test
+
+$ git checkout master
+$ git branch new-branch-to-save-current-commits
+$ 
+$ git fetch --all
+$ git reset --hard origin/master
 ```
 
 ### Pushing
 
+Git 可以强制 push，参考 [stackoverflow](https://stackoverflow.com/questions/5509543/how-do-i-properly-force-a-git-push)
 ```terminal
 # git push <remote> <branch>
 git push origin serverfix
+
+$ git push origin <your_branch_name> -f
+```
+
+## 3.6 Rebasing
+
+- In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase
+- rebasing makes for a cleaner history, 让整个脉络更加清晰，但是也隐藏了历史。Merge 则不同，如实反应，但是可能路径比较乱
+```terminal
+$ git checkout experiment
+$ git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: added staged command
 ```
 
