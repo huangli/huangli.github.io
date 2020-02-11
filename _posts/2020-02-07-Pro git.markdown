@@ -166,7 +166,7 @@ $ git remote -v
 
 ### Fetching and Pulling from Your Remotes
 ```terminal
-# git fetch command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. 
+# git fetch command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. 必须明确使用checkout 才能使用fetch 的内容 
 $ git fetch <remote>
 
 #  git pull command to automatically fetch and then merge that remote branch into your current branch.
@@ -484,11 +484,27 @@ $ git push origin master
 ### Private Managed Team
 
 - master branch 由integration manager 来维护，team 各自维护一个 feature branch
-- [push -u 是啥意思？](https://stackoverflow.com/questions/5561295/what-does-git-push-u-mean)。是设置自己默认的 upstream repository，这样不用每次都设定master 或是其他的 feature
+- [push -u 是啥意思？](https://stackoverflow.com/questions/5561295/what-does-git-push-u-mean)。是设置自己默认的 upstream,提前设置好一个默认映射关系在 repository 中，这样就可以直接git push origin, 而不是git push orgin master
 
 ```terminal
+# Jessica’s work on feature A
 $ git checkout -b featureA
 $ git push -u origin featureA
+
+# Jessica decides to start working on featureB
+$ git checkout -b featureB origin/master
+$ vim lib/simplegit.rb
+$ git commit -am 'made the ls-tree function recursive'
+[featureB e5b0fdc] made the ls-tree function recursive
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ vim lib/simplegit.rb
+$ git commit -am 'add ls-files'
+
+# Jessica 得知server featureB的 initial commit 已经push 上去，分支叫做 featureBee
+$ git fetch origin
+$ git merge origin/featureBee
+# 以后自己的featureB 就push 到 server 的 featureBee
+$ git push -u origin featureB:featureBee
 
 ```
 
