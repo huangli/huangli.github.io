@@ -12,6 +12,7 @@ categories: 读书笔记
 - [Atassian git tutorials](https://www.atlassian.com/git/tutorials/making-a-pull-request)
 - [Pro Git](https://git-scm.com/book/en/v2/)
 - Git 在 ZSH 下的快捷操作 [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
+- [Git tips](https://mislav.net/2010/07/git-tips/)
 
 # 1. What is git
 
@@ -426,3 +427,68 @@ Applying: added staged command
 ![Dictator](https://git-scm.com/book/en/v2/images/benevolent-dictator.png)
 - One famous example is the Linux kernel
 - This kind of workflow isn’t common, but can be useful in very big projects, or in highly hierarchical environments. 
+
+## 5.2 Contributing to a Project
+
+- The main difficulty with describing how to contribute to a project are the numerous variations on how to do that.
+- 几千人的大项目怎么做的？几百的人呢？
+    + 是否允许人commit ？
+    + 是否有一个integration manager？
+    + 那种模式管控的？
+
+### Commit Guidelines
+
+```terminal
+# 检查是否有空格的错误
+$ git diff --check
+```
+
+-  Commit message. As a general rule, your messages should start with a single line that’s no more than about 50 characters and that describes the changeset concisely, followed by a blank line, followed by a more detailed explanation。平时都是gc -m 写博客可以，如果正式项目肯定不行
+
+```
+Capitalized, short (50 chars or less) summary
+
+More detailed explanatory text, if necessary.  Wrap it to about 72
+characters or so.  In some contexts, the first line is treated as the
+subject of an email and the rest of the text as the body.  The blank
+line separating the summary from the body is critical (unless you omit
+the body entirely); tools like rebase can get confused if you run the
+two together.
+
+Write your commit message in the imperative: "Fix bug" and not "Fixed bug"
+or "Fixes bug."  This convention matches up with commit messages generated
+by commands like git merge and git revert.
+
+Further paragraphs come after blank lines.
+
+- Bullet points are okay, too
+
+- Typically a hyphen or asterisk is used for the bullet, followed by a
+  single space, with blank lines in between, but conventions vary here
+
+- Use a hanging indent
+```
+
+### Private small team
+
+- 如果只有几个人，使用方式和 cvs 类似，只不过要先fetch 、 merge 之后在push
+
+```terminal
+$ git fetch origin
+$ git merge origin/master
+$ git push origin master
+```
+
+![Image](https://git-scm.com/book/en/v2/images/small-team-flow.png)
+
+### Private Managed Team
+
+- master branch 由integration manager 来维护，team 各自维护一个 feature branch
+- [push -u 是啥意思？](https://stackoverflow.com/questions/5561295/what-does-git-push-u-mean)。是设置自己默认的 upstream repository，这样不用每次都设定master 或是其他的 feature
+
+```terminal
+$ git checkout -b featureA
+$ git push -u origin featureA
+
+```
+
