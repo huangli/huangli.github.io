@@ -13,6 +13,7 @@ categories: 读书笔记
 - [Pro Git](https://git-scm.com/book/en/v2/)
 - Git 在 ZSH 下的快捷操作 [zsh git cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet#git)
 - [Git tips](https://mislav.net/2010/07/git-tips/)
+- [常用Git 清单](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 
 # 1. What is git
 
@@ -508,3 +509,63 @@ $ git push -u origin featureB:featureBee
 
 ```
 
+### Forked Public Project
+
+> fork 出来的直接加在remote 中即可，每个feature 要独立在一个branch，不然容易乱
+
+- pull request: Once your work has been pushed to your fork of the repository, you need to notify the maintainers of the original project that you have work you’d like them to merge
+
+
+```terminal
+$ git clone <url>
+$ cd project
+$ git checkout -b featureA
+  ... work ...
+$ git commit
+  ... work ...
+$ git commit
+
+# When your branch work is finished and you’re ready to contribute it back to the maintainers, go to the original project page and click the “Fork” button,
+$ git remote add myfork <url>
+$ git push -u myfork featureA
+
+# 通知原有项目人$ git checkout -b featureB origin/master
+$ git request-pull origin/master myfork
+The following changes since commit 1edee6b1d61823a2de3b09c160d7080b8d1b3a40:
+Jessica Smith (1):
+        added a new function
+
+are available in the git repository at:
+
+  git://githost/simplegit.git featureA
+
+Jessica Smith (2):
+      add limit to log function
+      change log output to 30 from 25
+
+ lib/simplegit.rb |   10 +++++++++-
+ 1 files changed, 9 insertions(+), 1 deletions(-)
+
+# 如果要开始新的feature
+# don’t continue working on the topic branch you just pushed up
+$ git checkout -b featureB origin/master
+
+# 如果 origin/master 和 feature 有冲突
+# -f 是强制，也可以commit 到 server 的另一个featurev2
+$ git checkout featureA
+$ git rebase origin/master
+$ git push -f myfork featureA
+```
+
+### Public Project over Email
+
+- Many projects have established procedures for accepting patches — you’ll need to check the specific rules for each project, because they will differ. 
+
+```terminal
+# format-patch 不太了解
+$ git format-patch -M origin/master
+# 可以通过git 直接发送邮件，在gitconfig中配置,下面的命令就可以直接发送邮件了
+$ git send-email *.patch
+```
+
+## 5.2 
