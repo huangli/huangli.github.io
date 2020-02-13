@@ -568,4 +568,95 @@ $ git format-patch -M origin/master
 $ git send-email *.patch
 ```
 
-## 5.2 
+## 5.2 Maintaining a Project
+
+### Working in Topic Branches
+
+```termina
+# 创建一个分支以便接受别人的request
+$ git checkout -b sc/ruby_client master
+```
+
+### Applying Patches from Email
+
+> 需要重看，patch 和 pull request 有啥区别？
+
+```terminal
+# 不懂, patch 和 pull request有什么不同？
+$ git apply /tmp/patch-ruby-client.patch
+
+# you can run git apply --check with the patch:
+$ git apply --check 0001-seeing-if-this-helps-the-gem.patch
+error: patch failed: ticgit.gemspec:1
+error: ticgit.gemspec: patch does not apply
+```
+
+# 6. GitHub
+
+## 6.2 Contributing to a Project
+
+### The GitHub Flow
+
+- Fork the project
+- Create a topic branch from master.
+- Make some commits to improve the project.
+- Push this branch to your GitHub project.
+- Open a Pull Request on GitHub.
+- Discuss, and optionally continue committing.
+- The project owner merges or closes the Pull Request.
+- Sync the updated master back to your fork.
+
+
+# 7 Git Tools
+
+## 7.1 Revision Selection
+
+可以通过sha-1 跳转到制定的commit，即使sha-1 只有7位数字
+```terminal
+$ git show 1c002dd4b536e7479fe34593e72e6c6c1819e53b
+$ git show 1c002dd4b536e7479f
+$ git show 1c002d
+```
+
+### Branch References
+
+```terminal
+#  a log of where your HEAD and branch references have been for the last few months, reflog information is strictly local.it's like shell history
+$ git reflog
+734713b HEAD@{0}: commit: fixed refs handling, added gc auto, updated
+d921970 HEAD@{1}: merge phedders/rdocs: Merge made by the 'recursive' strategy.
+1c002dd HEAD@{2}: commit: added some blame and merge stuff
+1c36188 HEAD@{3}: rebase -i (squash): updating HEAD
+95df984 HEAD@{4}: commit: # This is a combination of two commits.
+1c36188 HEAD@{5}: rebase -i (squash): updating HEAD
+7e05da5 HEAD@{6}: rebase -i (pick): updating HEAD
+
+$ git show HEAD@{5}
+$ git show master@{yesterday}
+
+#  However, it can be helpful sometimes when you need to see what’s really going on. Here you can run rev-parse on your branch
+$ git rev-parse topic1
+```
+
+HEAD^, which means “the parent of head
+```terminal
+$ git show HEAD^
+# 可以叠加
+$ git show HEAD^^^
+
+# 第三个 parent
+$ git show d921970^3
+```
+
+也可以用HEAD~, 但是有啥有啥区别了？一个是横向的索引，看兄妹。一个是纵向的看父亲。[参考stackoverflow](https://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git)
+```terminal
+$ git show HEAD~~~
+```
+
+### Commit Ranges
+
+Double Dot
+```terminal
+# all commits reachable from experiment that aren’t reachable from master
+$ git log master..experiment
+```
