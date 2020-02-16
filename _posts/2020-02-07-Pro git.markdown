@@ -611,6 +611,8 @@ error: ticgit.gemspec: patch does not apply
 
 ## 7.1 Revision Selection
 
+> 提供的回顾历史的方法
+
 可以通过sha-1 跳转到制定的commit，即使sha-1 只有7位数字
 ```terminal
 $ git show 1c002dd4b536e7479fe34593e72e6c6c1819e53b
@@ -660,3 +662,119 @@ Double Dot
 # all commits reachable from experiment that aren’t reachable from master
 $ git log master..experiment
 ```
+
+#### 两个点
+
+本地已经提交，但是 remote 没有的，看看领先几个commit
+```terminal
+$ git log origin/master..HEAD
+```
+
+多个筛选条件,^ = -- not ref ，两个点的并没有^ 好懂
+```terminal
+$ git log refA..refB
+$ git log ^refA refB
+$ git log refB --not refA
+
+$ git log refA refB ^refC
+$ git log refA refB --not refC
+```
+
+#### 三个点
+
+all the commits that are reachable by **either** of two references but not by both of them. 找到独立的commit
+```terminal
+$ git log master...experiment
+```
+
+突然想到一个问题如果想要看？[log tree了](https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs/54532734)，这是个简单的版本，非常方便
+```shell
+alias gtree="git log --all --decorate --oneline --graph"
+```
+
+## 7.2 Interactive Staging Interactive Staging
+
+> 把一个大的commit 分割成几个小的，这样可以方便其他人审核代码
+
+### Interactive Staging
+
+```terminal
+$ git add -i
+           staged     unstaged path
+  1:    unchanged        +0/-1 TODO
+  2:    unchanged        +1/-1 index.html
+  3:    unchanged        +5/-1 lib/simplegit.rb
+
+*** Commands ***
+  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]dd untracked
+  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp
+What now>
+```
+
+### Staging Patches
+
+可以把一个文件的部分提交到暂存区，这个功能很有意思了，也可以通过另外一个branch的方式吧，个人不太喜欢回过头来这么做。
+
+## 7.3 Stashing and Cleaning
+
+> The problem is, you don’t want to do a commit of half-done work just so you can get back to this point later. The answer to this issue is the git stash command. 如果是个人可能无所谓，但是团队合作，太多无意义的commit就会有问题，不过有merge rebase，为啥要有stash？
+
+### Stashing Your Work
+
+如果更改了几个文件
+```terminal
+$ git status
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+    modified:   lib/simplegit.rb
+
+$ git stash
+Saved working directory and index state \
+  "WIP on master: 049d078 added the index file"
+HEAD is now at 049d078 added the index file
+(To restore them type "git stash apply")
+
+# 这个时候就没有暂存区的变更了
+$ git status
+
+$ git stash list
+stash@{0}: WIP on master: 049d078 added the index file
+stash@{1}: WIP on master: c264051 Revert "added file_size"
+stash@{2}: WIP on master: 21d80a5 added number to log
+$ git stash apply stash@{2}
+
+```
+
+### Creating a Branch from a Stash
+
+```terminal
+# 直接从stash 创建 branch
+$ git stash branch testchanges
+M   index.html
+M   lib/simplegit.rb
+Switched to a new branch 'testchanges'
+On branch testchanges
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+```
+
+### Cleaning your Working Directory
+
+```terminal
+# To remove all the untracked files in your working directory, you can run git clean -f
+$ git clean -f
+
+# dry run， 告诉结果，但是不会开始行动
+$ git clean -d -n
+```
+
+## 7.4 Signing Your Work
+
+
