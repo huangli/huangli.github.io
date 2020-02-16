@@ -717,7 +717,7 @@ What now>
 
 ## 7.3 Stashing and Cleaning
 
-> The problem is, you don’t want to do a commit of half-done work just so you can get back to this point later. The answer to this issue is the git stash command. 如果是个人可能无所谓，但是团队合作，太多无意义的commit就会有问题，不过有merge rebase，为啥要有stash？
+> The problem is, you don’t want to do a commit of half-done work just so you can get back to this point later. The answer to this issue is the git stash command. 如果是个人可能无所谓，但是团队合作，太多无意义的commit就会有问题，不过有merge rebase，为啥要有stash？很类似于“暂停”按钮
 
 ### Stashing Your Work
 
@@ -775,6 +775,56 @@ $ git clean -f
 $ git clean -d -n
 ```
 
-## 7.4 Signing Your Work
+## 7.5 Searching
 
+> 也是协作的需求，找到特定的函数或者文件，这样可以追溯历史
+
+### Git Grep
+
+```terminal
+$ git grep -n gmtime_r
+$ git grep --count gmtime_r
+$ git grep -p gmtime_r *.c
+
+# --break and --heading options which help split up the output into a more readable format
+$ git grep --break --heading \
+    -n -e '#define' --and \( -e LINK -e BUF_MAX \) v1.8.0
+```
+
+### Git Log Searching
+
+都是帮助追溯历史
+
+```terminal
+$ git log -S ZLIB_BUF_MAX --oneline
+e01503b zlib: allow feeding more than 4GB in one go
+ef49a7a zlib: zlib can only process 4GB at a time
+```
+
+
+### Line Log Search
+
+这个功能感觉就是找到底谁引入的bug了， to see every change made to the function git_deflate_bound in the zlib.c
+
+```terminal
+$ git log -L :git_deflate_bound:zlib.c
+commit ef49a7a0126d64359c974b4b3b71d7ad42ee3bca
+Author: Junio C Hamano <gitster@pobox.com>
+Date:   Fri Jun 10 11:52:15 2011 -0700
+
+    zlib: zlib can only process 4GB at a time
+
+diff --git a/zlib.c b/zlib.c
+--- a/zlib.c
++++ b/zlib.c
+@@ -85,5 +130,5 @@
+-unsigned long git_deflate_bound(z_streamp strm, unsigned long size)
++unsigned long git_deflate_bound(git_zstream *strm, unsigned long size)
+ {
+-       return deflateBound(strm, size);
++       return deflateBound(&strm->z, size);
+ }
+```
+
+## 7.6 Rewriting History
 
