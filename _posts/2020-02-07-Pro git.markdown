@@ -828,3 +828,11 @@ diff --git a/zlib.c b/zlib.c
 
 ## 7.6 Rewriting History
 
+> 让commit 的历史变成你想要的那样
+
+### Changing the Last Commit
+
+modify your last commit message
+```terminal
+$ git commit --amend
+```
