@@ -829,7 +829,6 @@ diff --git a/zlib.c b/zlib.c
 ```
 
 ## 7.6 Rewriting History
->>>>>>> 6340866f6793a7c18cb1ab9356c1905d89057a4e
 
 ### Git Grep
 
@@ -879,5 +878,49 @@ diff --git a/zlib.c b/zlib.c
 ```
 
 ## 7.6 Rewriting History
+
+> 让commit 的历史变成你想要的那样，拆分合并修改，从每一个commit 删除一个文件，修改email 地址
+
+### Changing the Last Commit
+
+- modify your last commit message, 不管是commit 的内容还是commit message。如果要更更改内容，就直接更改在运行如下命令即可
+- don’t amend your last commit if you’ve already pushed it!
+- An amended commit may (or may not) need an amended commit message. 如果只是更改一下拼写错误之类的
+
+
+```terminal
+$ git commit --amend
+```
+
+
+## 7.7 Reset Demystified
+
+![Git](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
+
+| Tree   | Role |
+| --- | --- |
+| HEAD | Last commit snapshot, next parent |
+| Index | Proposed next commit snapshot |
+| Working Directory | Sandbox |
+
+### Head
+
+通过git log 也能看到HEAD 指向情况
+```terminal
+$ git cat-file -p HEAD
+
+# inspecting the state of the Staging Index tree.
+$ git ls-tree -r HEAD
+```
+
+![Git Workflow](https://git-scm.com/book/en/v2/images/reset-workflow.png)
+
+- git add 可以把file.txt 添加到index 
+- The git status command output displays changes between the Commit History and the Staging Index。如果红色就是working directory出现了变动，如果 git add 那么变动到了Index，git status 显示黄色
+
+![git add](https://git-scm.com/book/en/v2/images/reset-ex2.png)
+
+
+
 
 
