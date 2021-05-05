@@ -8,10 +8,10 @@ highlighter: rouge
 gems: [jekyll-paginate]
 paginate: 30
 paginate_path: "page:num"
-name: 退居三线
-description: 退居三线 | There are no limitations, except the ones you make
+name: 一路向东
+description: 一路向东 | There are no limitations, except the ones you make
 author: 黄立
 email: ekinasm@gmail.com
 hub: huangli
 safe: false
-about: "退居三线"
+about: "一路向东"
